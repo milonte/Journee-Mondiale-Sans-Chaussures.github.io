@@ -1,1 +1,29 @@
+.container {
+	
+	max-width: 1200px;
+	padding: 0;
+}
 
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.display-4{
+
+padding-top: 0px; /*(haute)*/
+margin-bottom: 80px;
+
+}
+
+.photoWarning{
+	width: 5%;
+	height: 5%;
+
+}
