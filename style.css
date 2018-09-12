@@ -1,3 +1,11 @@
 .container{
-	width:1200px;
+	width:auto;
+}
+@media screen and (max-width:575px){
+	.img-fluid{
+		display:none;
+	}
+	.pres{
+		font-size:2.5em;
+	}
 }
