@@ -3,6 +3,12 @@ body .container {
     padding: 0;
 }
 
+/* HEADER */
+
+.navbar ul {
+    align-items: flex-end;
+}
+
 .card {
     background-color: rgba(0,0,0,100%);
 }
@@ -18,9 +24,17 @@ body .container {
     font-size: 30px;
 }
 
-.navbar ul {
-    align-items: flex-end;
+/* FORMULAIRE */
+
+iframe{
+	width:100%;
+	height:400px;
 }
+.map{
+	border-right:2px black solid;
+}
+
+/* FOOTER */
 
 footer{
     background-color: rgba(0,0,0,80%);
