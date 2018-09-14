@@ -42,7 +42,7 @@ section {
 
 /* NAVBAR */
 
-header #navbar {
+ header #navbar {
     background-color: rgba(0,0,0,70%);
     position: fixed;
     z-index: 50;
