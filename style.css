@@ -6,14 +6,7 @@ body .container {
 /* .container{
 	width:auto;
 } */
-@media screen and (max-width:575px){
-	.img-fluid{
-		display:none;
-	}
-	.pres{
-		font-size:2.5em;
-	}
-}
+
 
 
 /* HEADER */
@@ -42,11 +35,24 @@ header .card .card-img-overlay {
 .display-4{
     padding-top: 0px; /*(haute)*/
     margin-bottom: 80px;
+    font-family : serif; /* style font titre*/
+
 }
 
 .jumbotron {
     margin: 0;
+    font-family : sans-serif;/* style font texte*/
+    padding : ;
 }
+
+
+#lead-bottom{
+
+    padding-top:43px;
+
+}
+
+
 
 .photoWarning{
     width: 5%;
@@ -86,4 +92,12 @@ footer .coeur {
     margin-top: -10px;
 }
 
+@media screen and (max-width:575px){
+    .img-fluid{
+        display:none;
+    }
+    .pres{
+        font-size:2.5em;
+    }
+}
 
