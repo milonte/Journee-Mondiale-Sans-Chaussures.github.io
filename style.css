@@ -16,14 +16,13 @@ body .container {
 }
 
 body p {
-    font-family: 'Merienda';
     font-size: 16px;
 }
 
 h1 {
     font-family: 'Merienda';
     font-size: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 h2 {
@@ -40,6 +39,14 @@ section {
     padding-right: 25px;
 }
 
+section:nth-child(odd){
+    background-color: rgba(0,0,0,10%);
+}
+
+section:nth-child(even){
+    background-color: rgba(0,0,0,15%);
+}
+
 /* NAVBAR */
 
  header #navbar {
@@ -48,11 +55,10 @@ section {
     z-index: 50;
     top: 0;
     width:100%;
-    max-width: 1200px;
 }
 
 header a {
-    font-family: 'Merienda';
+    
 }
 
 header .navbar-brand {
@@ -103,7 +109,7 @@ header .card-text .date {
 header .card-text .slogan {
     position: absolute;
     top: 40%;
-    left: 60%;
+    left: 50%;
 }
 /* PRESENTATION */
 
