@@ -23,12 +23,21 @@ body p {
 h1 {
     font-family: 'Merienda';
     font-size: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 h2 {
     font-family: 'Merienda';
     font-size: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 /* NAVBAR */
@@ -40,6 +49,10 @@ header #navbar {
     top: 0;
     width:100%;
     max-width: 1200px;
+}
+
+header a {
+    font-family: 'Merienda';
 }
 
 header .navbar-brand {
@@ -80,6 +93,12 @@ header .card-text .date {
     top: 40%;
     left: 10%;
 }
+.display-4{
+    padding-top: 0px; /*(haute)*/
+    margin-bottom: 80px;
+    font-family : serif; /* style font titre*/
+
+}
 
 header .card-text .slogan {
     position: absolute;
@@ -91,7 +110,8 @@ header .card-text .slogan {
 .jumbotron{
     background:none;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .citation{
@@ -99,8 +119,9 @@ header .card-text .slogan {
     text-align:center;
 }
 
-/* COMMENT PARTICIPER */
-
+#lead-bottom{
+    padding-top: 80px;
+}
 
 .photoWarning{
     width: 5%;
@@ -119,7 +140,7 @@ iframe{
 /* FOOTER */
 
 footer{
-    background-color: rgba(0,0,0,80%);
+    background-color: rgba(0,0,0,70%);
     color: white;
     padding-top: 20px;
     padding-left: 15px;
