@@ -15,10 +15,21 @@ body .container {
     padding: 0;
 }
 
-/* .container{
-	width:auto;
-} */
+body p {
+    font-family: 'Merienda';
+    font-size: 16px;
+}
 
+h1 {
+    font-family: 'Merienda';
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-family: 'Merienda';
+    font-size: 30px;
+}
 
 /* NAVBAR */
 
@@ -35,6 +46,8 @@ header .navbar-brand {
     font-family: 'Oregano';
     font-size: 25pt;
 }
+
+/* HEADER */
 
 header .navbar ul {
     align-items: flex-end;
@@ -74,19 +87,20 @@ header .card-text .slogan {
     left: 60%;
 }
 /* PRESENTATION */
+
 .jumbotron{
     background:none;
+    margin: 0;
+    padding-top: 50px;
 }
+
+.citation{
+    color:#1fa597;
+    text-align:center;
+}
+
 /* COMMENT PARTICIPER */
 
-.display-4{
-    padding-top: 0px; /*(haute)*/
-    margin-bottom: 80px;
-}
-
-.jumbotron {
-    margin: 0;
-}
 
 .photoWarning{
     width: 5%;
@@ -125,7 +139,16 @@ footer .coeur {
 }
 
 @media screen and (max-width:767px){
-	.img-fluid{
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    
+    .img-fluid{
 		display:none;
 	}
 	.pres{
