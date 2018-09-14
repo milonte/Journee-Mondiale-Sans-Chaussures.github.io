@@ -6,16 +6,14 @@ body .container {
 /* .container{
 	width:auto;
 } */
-@media screen and (max-width:575px){
-	.img-fluid{
-		display:none;
-	}
-	.pres{
-		font-size:2.5em;
-	}
+/*Taille + Police des Titres h1*/
+h1.display-4{
+    font-size:32pt;
 }
-
-
+.citation{
+    color:#1fa597;
+    text-align:center;
+}
 /* HEADER */
 
 header .navbar ul {
@@ -85,5 +83,13 @@ footer .coeur {
     margin-right: 5px;
     margin-top: -10px;
 }
-
+/*Media Screen Partie Presentation*/
+@media screen and (max-width:767px){
+    .img-fluid{
+        display:none;
+    }
+    .pres{
+        font-size:2.5em;
+    }
+}
 
