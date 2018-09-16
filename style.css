@@ -10,10 +10,17 @@
     src: url('https://fonts.googleapis.com/css?family=Oregano:400,400i');
 }
 
-body .container {
+/* FOR CONTAINER */
+body .container { 
     max-width: 1200px;
     padding: 0;
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,30%);
+}
+
+/* FOR CONTAINER-FLUID */
+
+body .container-fluid { 
+    padding: 0;
 }
 
 body p {
@@ -36,8 +43,8 @@ h2 {
 section {
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 section:nth-child(odd){
@@ -58,44 +65,39 @@ section:nth-child(even){
     width:100%;
 }
 
-header a {
-    
-}
-
 header .navbar-brand {
     font-family: 'Oregano';
     font-size: 25pt;
 }
 
-/* HEADER */
-
 header .navbar ul {
     align-items: flex-end;
 }
 
-/* HEADER */
+/* ------HEADER BANNIERE ----- */
 
 
-header .card {
+#header-ban {
     background-color: rgb(141, 0, 99);
+    padding: 0;
 }
 
-header .card .card-img-top {
+#header-ban .card-img-top {
     opacity: 0.4;
 }
 
-header .card .card-img-overlay {
+#header-ban .card-img-overlay {
     color: white;
     font-size: 30px;
 }
 
-header .card-text .date,
-header .card-text .slogan {
+#header-ban .card-text .date,
+#header-ban .card-text .slogan {
     font-family: 'Oregano';
     font-size: 40px;
 }
 
-header .card-text .date {
+#header-ban .card-text .date {
     position: absolute;
     top: 40%;
     left: 10%;
@@ -107,11 +109,13 @@ header .card-text .date {
 
 }
 
-header .card-text .slogan {
+#header-ban .card-text .slogan {
     position: absolute;
     top: 60%;
     left: 10%;
 }
+
+
 /* PRESENTATION */
 
 .jumbotron{
@@ -124,6 +128,8 @@ header .card-text .slogan {
 .citation{
     color:#1fa597;
     text-align:center;
+    font-style: italic;
+    padding-top: 20px;
 }
 
 #lead-bottom{
@@ -135,6 +141,38 @@ header .card-text .slogan {
     height: 5%;
 }
 
+
+/* ARTICLE */
+
+
+.card {
+    padding: 15px;
+}
+
+.pic-legend {
+    padding-top: 30px;
+}
+
+.signature {
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+.signature img {
+    max-width: 100px;
+}
+
+.signature h6 {
+    margin-top: 18%;
+}
+
+/* CAROUSEL */
+
+#carousel .carousel-caption {
+    background-color: rgba(0,0,0,50%);
+    border-radius: 10px;
+}
+
 /* FORMULAIRE */
 
 iframe{
@@ -143,14 +181,6 @@ iframe{
     border: 0px;
 }
 
-/* CAROUSEL */
-
-.carousel-caption {
-    background-color: rgba(0,0,0,50%);
-    border-radius: 10px;
-}
-
-/* ARTICLE */
 /* FOOTER */
 
 footer{
