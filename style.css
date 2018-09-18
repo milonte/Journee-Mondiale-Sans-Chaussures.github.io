@@ -10,6 +10,11 @@
     src: url('https://fonts.googleapis.com/css?family=Oregano:400,400i');
 }
 
+@font-face {
+    font-family: butlerregular;
+    src : ulr('images/Butler.woff');
+}
+
 /* FOR CONTAINER */
 body .container { 
     max-width: 1200px;
@@ -78,12 +83,12 @@ header .navbar ul {
 
 
 #header-ban {
-    background-color: rgb(141, 0, 99);
+    background-color: rgb(61, 18, 110);
     padding: 0;
 }
 
 #header-ban .card-img-top {
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 #header-ban .card-img-overlay {
@@ -93,7 +98,7 @@ header .navbar ul {
 
 #header-ban .card-text .date,
 #header-ban .card-text .slogan {
-    font-family: 'Oregano';
+    font-family: 'butlerregular';
     font-size: 40px;
 }
 
