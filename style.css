@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 @import url('https://fonts.googleapis.com/css?family=Oregano:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Cabin')
 
 @font-face {
     font-family: 'Merienda', cursive;
@@ -10,6 +13,19 @@
     src: url('https://fonts.googleapis.com/css?family=Oregano:400,400i');
 }
 
+@font-face{
+    font-family: "Playfair Display", serif;
+    src :url ("https://fonts.googleapis.com/css?family=Playfair+Display");
+}
+@font-face{
+    font-family:'Quicksand', sans-serif ;
+    src:url("https://fonts.googleapis.com/css?family=Quicksand");
+}
+@font-face{
+    src:url('https://fonts.googleapis.com/css?family=Cabin');
+    font-family: "Cabin",sans-serif;
+}
+
 body .container {
     max-width: 1200px;
     padding: 0;
@@ -18,16 +34,19 @@ body .container {
 
 body p {
     font-size: 16px;
+    font-family: Cabin;
 }
 
 h1 {
-    font-family: 'Merienda';
-    font-size: 40px;
+    font-family: 'Playfair Display';
+    font-size: 45px;
     padding-bottom: 30px;
+    
+
 }
 
 h2 {
-    font-family: 'Merienda';
+    font-family: 'Cabin';
     font-size: 30px;
     padding-top: 35px;
     padding-bottom: 35px;
@@ -51,19 +70,16 @@ section:nth-child(even){
 /* NAVBAR */
 
  header #navbar {
-    background-color: rgba(0,0,0,70%);
+    background-color: rgba(0,0,0,85%);
     position: fixed;
     z-index: 50;
     top: 0;
     width:100%;
 }
 
-header a {
-    
-}
 
 header .navbar-brand {
-    font-family: 'Oregano';
+    font-family: 'Playfair Display';
     font-size: 25pt;
 }
 
@@ -151,6 +167,27 @@ iframe{
 }
 
 /* ARTICLE */
+.avatararticle2 img{
+    border-radius: 50%;
+}
+
+.entetearticle{
+    height : 225px;
+}
+
+.bloc-article{
+    height:325px;
+}
+
+.bloc-article >p{
+    height : 50%;
+}
+.card-body{
+        padding-top : 15%;
+        height : 80%;
+}
+
+
 /* FOOTER */
 
 footer{
@@ -172,6 +209,19 @@ footer .coeur {
     margin-right: 5px;
     margin-top: -10px;
 }
+
+@media (max-width:990px) and (min-width: 768px) {
+
+.bloc-article{
+    height : 400px;
+}
+.bloc-article >p{
+    height : 50%;
+}
+
+}
+
+
 
 @media screen and (max-width:767px){
     
@@ -215,6 +265,15 @@ footer .coeur {
         width: 30px;
         height: 30px;
     }
+    .entetearticle{
+        height : 175px;
+    }
+
+    .bloc-article{
+        height:380px;
+        padding-bottom: 0;
+    }
+
 }
 
 @media screen and (max-width:577px){
@@ -223,5 +282,14 @@ footer .coeur {
     header .card-text .slogan {
         font-size: 30px;
     }
+    .entetearticle{
+        height : 175px;
+    }
+
+    .bloc-article{
+        height:350px;
+        padding-bottom: 0;
+    }
+
 
 }
