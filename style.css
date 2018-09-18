@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('fonts/Butler_Regular.otf');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face{
+    font-family: "butlerregular";
+    src : url('fonts/Butler_Regular.otf');
+}
 
 @font-face {
     font-family: 'Merienda', cursive;
@@ -21,16 +28,36 @@
     font-family:'Quicksand', sans-serif ;
     src:url("https://fonts.googleapis.com/css?family=Quicksand");
 }
+
 @font-face{
     src:url('https://fonts.googleapis.com/css?family=Cabin');
     font-family: "Cabin",sans-serif;
 }
 
-@font-face {
-    font-family: butlerregular;
-    src : ulr('images/Butler.woff');
+@font-face{
+    src:url('https://fonts.googleapis.com/css?family=Lato');
+    font-family: 'Lato', serif;
 }
 
+/*0------- POLICIES ------------*/
+
+body p {
+    font-family: 'Cabin';
+}
+
+
+h1,
+h2,
+header .navbar-brand,
+#header-ban .card-text .date,
+#header-ban .card-text .slogan {
+    font-family: 'Lato'; 
+}
+
+
+
+
+/* --------- GLOBAL -------------- */
 
 /* FOR CONTAINER */
 body .container { 
@@ -47,19 +74,14 @@ body .container-fluid {
 
 body p {
     font-size: 16px;
-    font-family: Cabin;
 }
 
 h1 {
-    font-family: 'Playfair Display';
     font-size: 45px;
     padding-bottom: 30px;
-    
-
 }
 
 h2 {
-    font-family: 'Cabin';
     font-size: 30px;
     padding-top: 35px;
     padding-bottom: 35px;
@@ -91,8 +113,8 @@ section:nth-child(even){
 }
 
 header .navbar-brand {
-    font-family: 'Playfair Display';
-    font-size: 25pt;
+    font-weight: 900;
+    font-size: 20pt;
 }
 
 header .navbar ul {
@@ -103,42 +125,47 @@ header .navbar ul {
 
 
 #header-ban {
-    background-color: rgb(61, 18, 110);
+    background-color: rgb(61, 18, 110); 
     padding: 0;
 }
 
 #header-ban .card-img-top {
-    opacity: 0.2;
+    opacity: 0.3;
 }
 
 #header-ban .card-img-overlay {
     color: white;
-    font-size: 30px;
+    
 }
 
 #header-ban .card-text .date,
 #header-ban .card-text .slogan {
-    font-family: 'butlerregular';
-    font-size: 40px;
+    position: absolute;
+    font-weight: 900;
+    left: 15%;
+    line-height: 1.2;
 }
 
 #header-ban .card-text .date {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-}
-.display-4{
-    padding-top: 0px; /*(haute)*/
-    margin-bottom: 80px;
-    font-family : serif; /* style font titre*/
-
+    top: 35%;
+    font-size: 70px;
+    background-image: linear-gradient(rgba(247, 63, 201, 0.541) 50%,rgba(247, 63, 201, 0.575) 0);
+    background-repeat: repeat-x;
+    background-position: 0 70px;
+    background-size: 4px 4px; 
 }
 
 #header-ban .card-text .slogan {
-    position: absolute;
-    top: 60%;
-    left: 10%;
+    top: 45%;
+    font-size: 50px;
+    
 }
+
+.display-4{
+    padding-top: 0px; /*(haute)*/
+    margin-bottom: 80px;
+}
+
 
 
 /* PRESENTATION */
@@ -217,6 +244,9 @@ header .navbar ul {
 .card-body{
         padding-top : 15%;
         height : 80%;
+}
+.card-body p {
+    overflow: hidden;
 }
 
 
