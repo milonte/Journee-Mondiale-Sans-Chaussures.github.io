@@ -1,48 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Merienda');
-@import url('https://fonts.googleapis.com/css?family=Oregano:400,400i');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-@import url('https://fonts.googleapis.com/css?family=Cabin');
-@import url('fonts/Butler_Regular.otf');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Lato');
-
-@font-face{
-    font-family: "butlerregular";
-    src : url('fonts/Butler_Regular.otf');
-}
-
-@font-face {
-    font-family: 'Merienda', cursive;
-    src: url('https://fonts.googleapis.com/css?family=Merienda');
-}
-@font-face {
-    font-family: 'Oregano', cursive;
-    src: url('https://fonts.googleapis.com/css?family=Oregano:400,400i');
-}
-
-@font-face{
-    font-family: "Playfair Display", serif;
-    src :url ("https://fonts.googleapis.com/css?family=Playfair+Display");
-}
-@font-face{
-    font-family:'Quicksand', sans-serif ;
-    src:url("https://fonts.googleapis.com/css?family=Quicksand");
-}
-
-@font-face{
-    src:url('https://fonts.googleapis.com/css?family=Cabin');
-    font-family: "Cabin",sans-serif;
-}
 
 @font-face{
     src:url('https://fonts.googleapis.com/css?family=Lato');
     font-family: 'Lato', serif;
 }
 
+@font-face{
+    src:url('https://fonts.googleapis.com/css?family=Roboto');
+    font-family : 'Roboto',sans-serif;
+}
+
 /*0------- POLICIES ------------*/
 
 body p {
-    font-family: 'Cabin';
+    font-family: 'Roboto';
 }
 
 
@@ -62,7 +34,7 @@ header .navbar-brand,
 body{
     background-color: #35165c;
     background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 /* FOR CONTAINER */
@@ -115,7 +87,7 @@ section:nth-child(even){
 
 /* NAVBAR */
 
- header #navbar {
+header #navbar {
     background-color: rgba(0,0,0,85%);
     position: fixed;
     z-index: 50;
@@ -225,8 +197,27 @@ header .navbar ul {
 /* CAROUSEL */
 
 #carousel .carousel-caption {
-    background-color: rgba(0,0,0,50%);
+    background-color: rgba(0,0,0,55%);
     border-radius: 10px;
+}
+
+#carousel a{
+    color : #C160F4;
+    font-size : 20px;
+    text-decoration : underline;
+    text-shadow : 1px 1px black;
+}
+
+.carousel-indicators > li {
+  border-radius: 50%;
+  height : 15px;
+  width: 15px;
+  background-color: #33165C;
+}
+
+.carousel-indicators .active {
+background-color:#C160F4;
+border : 2px solid #43165C;
 }
 
 /* ARTICLE */
@@ -328,12 +319,12 @@ footer .coeur {
 }
 @media (max-width:990px) and (min-width: 768px) {
 
-.bloc-article{
-    height : 400px;
-}
-.bloc-article >p{
-    height : 50%;
-}
+    .bloc-article{
+        height : 400px;
+    }
+    .bloc-article >p{
+        height : 50%;
+    }
 
 }
 
@@ -350,45 +341,45 @@ footer .coeur {
     }
     
     .img-fluid{
-		display:none;
-	}
-	.pres{
-		font-size:2.5em;
-    }
-    
-    header .card-text .date,
-    header .card-text .slogan {
-        font-size: 35px;
-    }
+      display:none;
+  }
+  .pres{
+      font-size:2.5em;
+  }
+  
+  header .card-text .date,
+  header .card-text .slogan {
+    font-size: 35px;
+}
 
-    header .card-text .date {
-        position: absolute;
-        top: 30%;
-        text-align: center;
-    }
-    
-    header .card-text .slogan {
-        position: absolute;
-        top: 55%;
-        left: 10%;
-    }
+header .card-text .date {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
 
-    header .navbar-brand {
-        font-size: 20px;
-    }
+header .card-text .slogan {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+}
 
-    header .navbar-brand img{
-        width: 30px;
-        height: 30px;
-    }
-    .entetearticle{
-        height : 175px;
-    }
+header .navbar-brand {
+    font-size: 20px;
+}
 
-    .bloc-article{
-        height:380px;
-        padding-bottom: 0;
-    }
+header .navbar-brand img{
+    width: 30px;
+    height: 30px;
+}
+.entetearticle{
+    height : 175px;
+}
+
+.bloc-article{
+    height:380px;
+    padding-bottom: 0;
+}
 
 }
 
