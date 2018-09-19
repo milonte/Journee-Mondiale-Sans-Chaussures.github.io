@@ -131,6 +131,10 @@ header .navbar-brand {
 header .navbar ul {
     align-items: flex-end;
 }
+.nav-link:focus{
+    font-weight:bold;
+    font-size:8em;
+}
 
 /* ------HEADER BANNIERE ----- */
 
@@ -265,6 +269,7 @@ header .navbar ul {
 .card-body p {
     overflow: hidden;
 }
+
 .fas{
     color:purple;
     font-size:1.5em;
