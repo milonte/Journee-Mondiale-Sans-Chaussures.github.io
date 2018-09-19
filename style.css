@@ -200,7 +200,7 @@ header .navbar ul {
 }
 
 .citation{
-    color:#1fa597;
+    color:purple;
     text-align:center;
     font-style: italic;
     padding-top: 20px;
@@ -303,7 +303,13 @@ footer .coeur {
     margin-right: 5px;
     margin-top: -10px;
 }
-
+.Mention{
+    color:white;
+    font-weight:bold;
+}
+.Mention:hover{
+    color:purple;
+}
 @media (max-width:990px) and (min-width: 768px) {
 
 .bloc-article{
