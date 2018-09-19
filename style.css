@@ -125,7 +125,7 @@ section:nth-child(even){
 
 header .navbar-brand {
     font-weight: 900;
-    font-size: 20pt;
+    font-size: 25px;;
 }
 
 header .navbar ul {
@@ -139,6 +139,13 @@ header .navbar ul {
     /* background-color: rgb(61, 18, 110);  */
     background: radial-gradient(#54017a, #000000);
     padding: 0;
+    border-bottom: 2px solid White;
+    box-shadow: 0 0 7px 7px rgba(0,0,0,50%);
+}
+
+#header-ban,
+#header-ban .card-img-top {
+    max-height: 100vh;
 }
 
 #header-ban .card-img-top {
@@ -160,17 +167,16 @@ header .navbar ul {
 
 #header-ban .card-text .date {
     top: 35%;
-    font-size: 70px;
+    font-size: 5vw;
     background-image: linear-gradient(rgba(247, 63, 201, 0.541) 50%,rgba(247, 63, 201, 0.575) 0);
     background-repeat: repeat-x;
-    background-position: 0 70px;
+    background-position: 0 5vw;
     background-size: 4px 4px; 
 }
 
 #header-ban .card-text .slogan {
-    top: 45%;
-    font-size: 50px;
-    
+    top: 50%;
+    font-size: 4vw;
 }
 
 .display-4{
@@ -205,9 +211,14 @@ header .navbar ul {
     height: 5%;
 }
 
+/* CAROUSEL */
+
+#carousel .carousel-caption {
+    background-color: rgba(0,0,0,50%);
+    border-radius: 10px;
+}
 
 /* ARTICLE */
-
 
 #article .card {
     padding: 15px;
@@ -217,31 +228,6 @@ header .navbar ul {
     height: 75px;
 }
 
-.pic-legend {
-    padding-top: 30px;
-}
-
-.signature {
-    padding-top: 20px;
-    padding-right: 50px;
-}
-
-.signature img {
-    max-width: 100px;
-}
-
-.signature h6 {
-    margin-top: 18%;
-}
-
-/* CAROUSEL */
-
-#carousel .carousel-caption {
-    background-color: rgba(0,0,0,50%);
-    border-radius: 10px;
-}
-
-/* ARTICLE */
 .avatararticle2 img{
     border-radius: 50%;
 }
@@ -292,11 +278,13 @@ form{
 /* FOOTER */
 
 footer{
-    background-color: rgba(0,0,0,70%);
+    background-color: rgba(0,0,0,85%);
     color: white;
     padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    border-top: 2px solid White;
+    box-shadow: 0 0 7px 7px rgba(0,0,0,50%);
 }
 
 footer p {
@@ -379,10 +367,6 @@ footer .coeur {
 
 @media screen and (max-width:577px){
 
-    header .card-text .date,
-    header .card-text .slogan {
-        font-size: 30px;
-    }
     .entetearticle{
         height : 175px;
     }
@@ -392,5 +376,8 @@ footer .coeur {
         padding-bottom: 0;
     }
 
+    header .navbar-brand .website_name {
+        display: none;
+    }
 
 }
