@@ -222,6 +222,7 @@ header .nav-link:focus{
 
 #lead-bottom{
     padding-top: 80px;
+
 }
 
 .photoWarning{
@@ -230,7 +231,7 @@ header .nav-link:focus{
 }
 .fas{
     color:purple;
-    font-size:1.5em;
+    font-size:1em;
 }
 .fas:hover{
     color:purple;
@@ -316,6 +317,7 @@ border : 2px solid #43165C;
 .card-body p {
     overflow: hidden;
 }
+
 #article h6{
     font-size : 14px;
     font-style:italic;
@@ -330,6 +332,7 @@ border : 2px solid #43165C;
     font-size : 17px;
     text-decoration : underline;
     text-shadow : 1px 1px black;
+
 }
 
 /* FORMULAIRE */
@@ -349,11 +352,19 @@ form{
     width:auto;
     background-color: rgba(92, 1, 212, 0.25);
     background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
+
+}
+.btn{
+    background-color: rgba(92, 1, 212, 0.25);
+    color:white;
+}
+
 }
 .bouton{
     background-color: rgba(92, 1, 212, 0.25);
     color:white;
 }
+
 
 /* FOOTER */
 
