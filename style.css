@@ -52,18 +52,21 @@ body .container-fluid {
 }
 
 body p {
-    font-size: 16px;
+    font-size: 16pt;
 }
 
 h1 {
     font-size: 45px;
     padding-bottom: 30px;
+    font-weight: 800;
+    text-align: center;
 }
 
 h2 {
     font-size: 30px;
     padding-top: 35px;
     padding-bottom: 35px;
+    text-align: center;
 }
 
 section {
@@ -71,41 +74,69 @@ section {
     padding-bottom: 100px;
     padding-left: 50px;
     padding-right: 50px;
+    border-bottom: 4px solid #8A6CB4;
 }
 
 section:nth-child(odd){
-    /* background-color: rgba(0,0,0,10%); */
-    background-color: rgba(92, 1, 212, 0.25);
+    background-color: rgba(162, 129, 255, 0.15);
+    /* background-color: rgba(92, 1, 212, 0.2); */
     background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
 }
 
 section:nth-child(even){
-    /* background-color: rgba(0,0,0,15%); */
-    background-color: rgba(92, 1, 212, 0.3);
+    background-color: rgba(162, 129, 255, 0.35);
+    /* background-color: rgba(92, 1, 212, 0.35); */
     background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
+}
+
+.intersection {
+    padding:0;
+    margin: 0;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -124px;
 }
 
 /* NAVBAR */
 
 header #navbar {
-    background-color: rgba(0,0,0,85%);
+    /* background-color: rgba(0,0,0,85%); */
     position: fixed;
     z-index: 50;
     top: 0;
     width:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 header .navbar-brand {
     font-weight: 900;
-    font-size: 25px;;
+    font-size: 25px;
 }
 
 header .navbar ul {
     align-items: flex-end;
 }
-.nav-link:focus{
+
+header .nav-link {
+    font-family: 'Roboto';
+    font-weight: 800;
+    color: white;
+    font-size: 14pt;
+    margin: 0.5vw;
+}
+
+header .nav-item:hover {
+    background-color: #54017a;
+    border-radius: 2px;
+}
+
+header .nav-link:focus{
     font-weight:bold;
-    font-size:8em;
 }
 
 /* ------HEADER BANNIERE ----- */
@@ -170,6 +201,10 @@ header .navbar ul {
     padding-top: 0;
     padding-bottom: 0;
 }
+.jumbotron img {
+    background-color: #8A6CB4;
+    border-radius: 50%;
+}
 
 .citation{
     color:purple;
@@ -196,14 +231,36 @@ header .navbar ul {
 .Contre{
     font-weight:normal;
 }
+.fas{
+    color:purple;
+    font-size:1.5em;
+}
+.fas:hover{
+    color:purple;
+}
 /* CAROUSEL */
+
+#carouselExampleIndicators{
+  padding : 15px;
+  border-radius: 5px;
+  background-color: rgba(92, 1, 212, 0.25);
+  background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
+  border : 1px solid #9780C2;
+}
 
 #carousel .carousel-caption {
     background-color: rgba(0,0,0,55%);
     border-radius: 10px;
+    position : absolute;
+    bottom : 10%;
+}
+#carousel a{
+    color:#C160F4;
+    text-decoration : underline;
+    font-size:20px;
 }
 
-#carousel a{
+#carousel a:hover{
     color : #C160F4;
     font-size : 20px;
     text-decoration : underline;
@@ -228,12 +285,16 @@ border : 2px solid #43165C;
     padding: 15px;
     background-color: rgba(92, 1, 212, 0.25);
     background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
+    border : 1px solid #9780C2;
+    border-radius : 5px;
 }
 
 #article .card-title {
     height: 75px;
 }
-
+.avatararticle1 img{
+    border-radius: 50%;
+}
 .avatararticle2 img{
     border-radius: 50%;
 }
@@ -257,13 +318,20 @@ border : 2px solid #43165C;
 .card-body p {
     overflow: hidden;
 }
-
-.fas{
-    color:purple;
-    font-size:1.5em;
+#article h6{
+    font-size : 14px;
+    font-style:italic;
 }
-.fas:hover{
-    color:purple;
+#article a{
+    color:#C160F4;
+    text-decoration : underline;
+}
+
+#article a:hover{
+    color : #C160F4;
+    font-size : 17px;
+    text-decoration : underline;
+    text-shadow : 1px 1px black;
 }
 
 /* FORMULAIRE */
@@ -296,7 +364,7 @@ footer{
     padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
-    border-top: 2px solid White;
+    border-top: 2px solid white;
     box-shadow: 0 0 7px 7px rgba(0,0,0,50%);
 }
 
@@ -318,6 +386,8 @@ footer .coeur {
 .Mention:hover{
     color:purple;
 }
+
+
 @media (max-width:990px) and (min-width: 768px) {
 
     .bloc-article{
