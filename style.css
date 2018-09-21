@@ -1,146 +1,370 @@
-@import url('https://fonts.googleapis.com/css?family=Merienda');
-@import url('https://fonts.googleapis.com/css?family=Oregano:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 @font-face {
-    font-family: 'Merienda', cursive;
-    src: url('https://fonts.googleapis.com/css?family=Merienda');
-}
-@font-face {
-    font-family: 'Oregano', cursive;
-    src: url('https://fonts.googleapis.com/css?family=Oregano:400,400i');
+    src: url('https://fonts.googleapis.com/css?family=Lato');
+    font-family: 'Lato', serif;
 }
 
-body .container {
+@font-face {
+    src: url('https://fonts.googleapis.com/css?family=Roboto');
+    font-family: 'Roboto', sans-serif;
+}
+
+/*0------- POLICIES ------------*/
+
+body p {
+    font-family: 'Roboto';
+}
+
+
+h1,
+h2,
+header .navbar-brand,
+#header-ban .card-text .date,
+#header-ban .card-text .slogan {
+    font-family: 'Lato';
+}
+
+
+
+
+/* --------- GLOBAL -------------- */
+
+body {
+    background-color: #35165c;
+    background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+/* FOR CONTAINER */
+.container {
     max-width: 1200px;
     padding: 0;
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,30%);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 30%);
+    background-color: white;
+}
+
+/* FOR CONTAINER-FLUID */
+
+body .container-fluid {
+    padding: 0;
 }
 
 body p {
-    font-size: 16px;
+    font-size: 16pt;
 }
 
 h1 {
-    font-family: 'Merienda';
-    font-size: 40px;
+    font-size: 45px;
     padding-bottom: 30px;
+    font-weight: 800;
+    text-align: center;
 }
 
 h2 {
-    font-family: 'Merienda';
     font-size: 30px;
     padding-top: 35px;
     padding-bottom: 35px;
+    text-align: center;
 }
 
 section {
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-section:nth-child(odd){
-    background-color: rgba(0,0,0,10%);
+section:nth-child(odd) {
+    background-color: rgba(162, 129, 255, 0.15);
+    /* background-color: rgba(92, 1, 212, 0.2); */
+    background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
 }
 
-section:nth-child(even){
-    background-color: rgba(0,0,0,15%);
+section:nth-child(even) {
+    background-color: rgba(162, 129, 255, 0.35);
+    /* background-color: rgba(92, 1, 212, 0.35); */
+    background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
+}
+
+.intersection {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -124px;
 }
 
 /* NAVBAR */
 
- header #navbar {
-    background-color: rgba(0,0,0,70%);
+header #navbar {
+    /* background-color: rgba(0,0,0,85%); */
     position: fixed;
     z-index: 50;
     top: 0;
-    width:100%;
-}
-
-header a {
-    
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 header .navbar-brand {
-    font-family: 'Oregano';
-    font-size: 25pt;
+    font-weight: 900;
+    font-size: 25px;
 }
-
-/* HEADER */
 
 header .navbar ul {
     align-items: flex-end;
 }
 
-/* HEADER */
-
-
-header .card {
-    background-color: rgb(141, 0, 99);
-}
-
-header .card .card-img-top {
-    opacity: 0.4;
-}
-
-header .card .card-img-overlay {
+header .nav-link {
+    font-family: 'Roboto';
+    font-weight: 800;
     color: white;
-    font-size: 30px;
+    font-size: 14pt;
+    margin: 0.5vw;
 }
 
-header .card-text .date,
-header .card-text .slogan {
-    font-family: 'Oregano';
-    font-size: 40px;
+header .nav-item:hover {
+    background-color: #54017a;
+    border-radius: 2px;
 }
 
-header .card-text .date {
+header .nav-link:focus {
+    font-weight: bold;
+}
+
+/* ------HEADER BANNIERE ----- */
+
+
+#header-ban {
+    /* background-color: rgb(61, 18, 110);  */
+    background: radial-gradient(#54017a, #000000);
+    padding: 0;
+    border-bottom: 2px solid White;
+    box-shadow: 0 0 7px 7px rgba(0, 0, 0, 50%);
+}
+
+#header-ban,
+#header-ban .card-img-top {
+    max-height: 100vh;
+}
+
+#header-ban .card-img-top {
+    opacity: 0.3;
+}
+
+#header-ban .card-img-overlay {
+    color: white;
+
+}
+
+#header-ban .card-text .date,
+#header-ban .card-text .slogan {
     position: absolute;
-    top: 40%;
-    left: 10%;
+    font-weight: 900;
+    left: 15%;
+    line-height: 1.2;
 }
-.display-4{
-    padding-top: 0px; /*(haute)*/
+
+#header-ban .card-text .date {
+    top: 35%;
+    font-size: 5.2vw;
+    background-image: linear-gradient(rgba(247, 63, 201, 0.541) 50%, rgba(247, 63, 201, 0.575) 0);
+    background-repeat: repeat-x;
+    background-position: 0 5.4vw;
+    background-size: 2px 2px;
+}
+
+#header-ban .card-text .slogan {
+    top: 50%;
+    font-size: 4vw;
+}
+
+.display-4 {
+    padding-top: 0px;
+    /*(haute)*/
     margin-bottom: 80px;
-    font-family : serif; /* style font titre*/
-
 }
 
-header .card-text .slogan {
-    position: absolute;
-    top: 60%;
-    left: 10%;
-}
+
+
 /* PRESENTATION */
 
-.jumbotron{
-    background:none;
+.jumbotron {
+    background: none;
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.citation{
-    color:#1fa597;
-    text-align:center;
+.jumbotron img {
+    background-color: #8A6CB4;
+    border-radius: 50%;
+    padding: 30px;
 }
 
-#lead-bottom{
+.citation {
+    color: purple;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.3em;
+}
+
+.citation2 {
+    color: purple;
+    text-align: center;
+    font-style: italic;
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+
+#lead-bottom {
     padding-top: 80px;
+
 }
 
-.photoWarning{
+.photoWarning {
     width: 5%;
     height: 5%;
 }
 
+.Contre {
+    font-weight: normal;
+}
+
+.fas {
+    color: purple;
+    font-size: 1.2em;
+}
+
+.fas:hover {
+    color: purple;
+}
+
+/* CAROUSEL */
+
+#carouselExampleIndicators {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(92, 1, 212, 0.25);
+    background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
+    border: 1px solid #9780C2;
+}
+
+#carousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 55%);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10%;
+}
+
+#carousel a {
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#carousel a:hover {
+    color: #C160F4;
+    font-size: 20px;
+    text-decoration: underline;
+    text-shadow: 1px 1px black;
+}
+
+.carousel-indicators>li {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #33165C;
+}
+
+.carousel-indicators .active {
+    background-color: #C160F4;
+    border: 2px solid #43165C;
+}
+
+/* ARTICLE */
+
+#article .card {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgba(92, 1, 212, 0.25);
+    background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
+    border: 1px solid #9780C2;
+    border-radius: 5px;
+}
+
+#article .card-title {
+    height: auto;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.avatararticle1 {
+    border-radius: 50%;
+    background-color: white;
+}
+
+.avatararticle2 img {
+    border-radius: 50%;
+}
+
+.entetearticle {
+    height: 225px;
+}
+
+.bloc-article {
+    height: 325px;
+    max-height: 325px;
+}
+
+.bloc-article>p {
+    height: 50%;
+}
+
+.card-body {
+    padding-top: 15%;
+    height: 80%;
+}
+
+.card-body p {
+    overflow: hidden;
+}
+
+#article h6 {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#article a {
+    color: #C160F4;
+    text-decoration: underline;
+}
+
+#article a:hover {
+    color: #C160F4;
+    font-size: 17px;
+    text-decoration: underline;
+    text-shadow: 1px 1px black;
+
+}
+
 /* FORMULAIRE */
 
-iframe{
-	width:100%;
-    height:400px;
+iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
     border: 0px;
+    padding: 1%;
+    border-radius: 2%;
+    background-color: rgba(92, 1, 212, 0.25);
+    background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
 }
 
 /* CAROUSEL */
@@ -151,14 +375,30 @@ iframe{
 }
 
 /* ARTICLE */
+form {
+    width: 100%;
+    padding: 5%;
+    border-radius: 2%;
+    background-color: rgba(92, 1, 212, 0.25);
+    background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
+
+}
+
+.bouton {
+    background-color: rgba(92, 1, 212, 0.25);
+}
+
+
 /* FOOTER */
 
-footer{
-    background-color: rgba(0,0,0,70%);
+footer {
+    background-color: rgba(0, 0, 0, 85%);
     color: white;
     padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    border-top: 2px solid white;
+    box-shadow: 0 0 7px 7px rgba(0, 0, 0, 50%);
 }
 
 footer p {
@@ -173,8 +413,32 @@ footer .coeur {
     margin-top: -10px;
 }
 
-@media screen and (max-width:767px){
-    
+.Mention {
+    color: white;
+    font-weight: bold;
+}
+
+.Mention:hover {
+    color: purple;
+}
+
+
+@media (max-width:990px) and (min-width: 768px) {
+
+    .bloc-article {
+        height: 400px;
+    }
+
+    .bloc-article>p {
+        height: 50%;
+    }
+
+}
+
+
+
+@media screen and (min-width:578px) and (max-width:767px) {
+
     h1 {
         font-size: 30px;
     }
@@ -182,14 +446,15 @@ footer .coeur {
     h2 {
         font-size: 25px;
     }
-    
-    .img-fluid{
-		display:none;
-	}
-	.pres{
-		font-size:2.5em;
+
+    .img-fluid {
+        display: none;
     }
-    
+
+    .pres {
+        font-size: 2.5em;
+    }
+
     header .card-text .date,
     header .card-text .slogan {
         font-size: 35px;
@@ -200,7 +465,7 @@ footer .coeur {
         top: 30%;
         text-align: center;
     }
-    
+
     header .card-text .slogan {
         position: absolute;
         top: 55%;
@@ -211,17 +476,39 @@ footer .coeur {
         font-size: 20px;
     }
 
-    header .navbar-brand img{
+    header .navbar-brand img {
         width: 30px;
         height: 30px;
     }
+
+    .entetearticle {
+        height: 175px;
+    }
+
+    .bloc-article {
+        height: 380px;
+        padding-bottom: 0;
+    }
+
 }
 
-@media screen and (max-width:577px){
+@media screen and (max-width:577px) {
 
-    header .card-text .date,
-    header .card-text .slogan {
-        font-size: 30px;
+    .entetearticle {
+        height: 175px;
+    }
+
+    .img-fluid {
+        display: none;
+    }
+
+    .bloc-article {
+        height: 350px;
+        padding-bottom: 0;
+    }
+
+    header .navbar-brand .website_name {
+        display: none;
     }
 
 }
