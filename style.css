@@ -74,7 +74,6 @@ section {
     padding-bottom: 100px;
     padding-left: 50px;
     padding-right: 50px;
-    border-bottom: 4px solid #8A6CB4;
 }
 
 section:nth-child(odd){
@@ -174,11 +173,11 @@ header .nav-link:focus{
 
 #header-ban .card-text .date {
     top: 35%;
-    font-size: 5vw;
+    font-size: 5.2vw;
     background-image: linear-gradient(rgba(247, 63, 201, 0.541) 50%,rgba(247, 63, 201, 0.575) 0);
     background-repeat: repeat-x;
-    background-position: 0 5vw;
-    background-size: 4px 4px; 
+    background-position: 0 5.4vw;
+    background-size: 2px 2px; 
 }
 
 #header-ban .card-text .slogan {
@@ -201,9 +200,11 @@ header .nav-link:focus{
     padding-top: 0;
     padding-bottom: 0;
 }
+
 .jumbotron img {
     background-color: #8A6CB4;
     border-radius: 50%;
+    padding: 30px;
 }
 
 .citation{
@@ -222,6 +223,7 @@ header .nav-link:focus{
 
 #lead-bottom{
     padding-top: 80px;
+
 }
 
 .photoWarning{
@@ -233,7 +235,11 @@ header .nav-link:focus{
 }
 .fas{
     color:purple;
+<<<<<<< HEAD
     font-size:1.2em;
+=======
+    font-size:1em;
+>>>>>>> 8beea3977bf6dbad8183509105d214d7482f2021
 }
 .fas:hover{
     color:purple;
@@ -322,6 +328,7 @@ border : 2px solid #43165C;
 .card-body p {
     overflow: hidden;
 }
+
 #article h6{
     font-size : 14px;
     font-style:italic;
@@ -336,6 +343,7 @@ border : 2px solid #43165C;
     font-size : 17px;
     text-decoration : underline;
     text-shadow : 1px 1px black;
+
 }
 
 /* FORMULAIRE */
@@ -356,10 +364,17 @@ form{
     border-radius:2%;
     background-color: rgba(92, 1, 212, 0.25);
     background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
+
 }
+.btn{
+    background-color: rgba(92, 1, 212, 0.25);
+    color:white;
+}
+
 .bouton{
     background-color: rgba(92, 1, 212, 0.25);
 }
+
 
 /* FOOTER */
 
