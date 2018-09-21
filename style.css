@@ -235,11 +235,7 @@ header .nav-link:focus{
 }
 .fas{
     color:purple;
-<<<<<<< HEAD
     font-size:1.2em;
-=======
-    font-size:1em;
->>>>>>> 8beea3977bf6dbad8183509105d214d7482f2021
 }
 .fas:hover{
     color:purple;
@@ -366,11 +362,6 @@ form{
     background-image: url("https://www.transparenttextures.com/patterns/gray-lines.png");
 
 }
-.btn{
-    background-color: rgba(92, 1, 212, 0.25);
-    color:white;
-}
-
 .bouton{
     background-color: rgba(92, 1, 212, 0.25);
 }
