@@ -305,8 +305,9 @@ header .nav-link:focus {
     margin-bottom: 15px;
 }
 
-.avatararticle1 img {
+.avatararticle1 {
     border-radius: 50%;
+    background-color: white;
 }
 
 .avatararticle2 img {
